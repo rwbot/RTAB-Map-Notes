@@ -14,12 +14,12 @@ Two of the most common setups in order to perform RGB-D Slam are the following:
 
 #### Kinect + Odometry + 2D laser
 
-![enter image description here](https://i-0658391eb9671438e.robotigniteacademy.com/jupyter/notebooks/img/rtabmap_config.png)
+![enter image description here](https://github.com/rwbot/RTAB-Map-Notes/blob/master/images/2/rtabmap_config.png?raw=true)
 
 
 #### Kinect + Odometry + Fake 2D laser from Kinect
 
-![](https://i-0658391eb9671438e.robotigniteacademy.com/jupyter/notebooks/img/rtabmap_config1.jpg)
+![](https://github.com/rwbot/RTAB-Map-Notes/blob/master/images/2/rtabmap_config_fakelaser.jpg?raw=true)
 
 
 
@@ -32,13 +32,14 @@ b) Depth Cloud
 c) Laser Scans
 
 ##### You will have to set the Fixed Frame to "base_link" in order to be able to visualize the data.  
+![](https://github.com/rwbot/RTAB-Map-Notes/blob/master/images/2/sensors_rviz.png?raw=true)
 
 
 ## Launching RTAB-Map
 
 The rtabmap_ros package, as many other ROS packages, has a set of parameters that you need to set up in order to properly launch it. So let's analyze some of the most important ones. For that, you can have a look at the launch file named  _demo_launch_file.launch_  that is contained in the  _turtlebot_rtab_  package. So, find the mentioned launch file, open it, and have a look at it. It should look like this:  
   
-![](https://i-0658391eb9671438e.robotigniteacademy.com/jupyter/notebooks/img/demo_launch_file.png)
+![](https://github.com/rwbot/RTAB-Map-Notes/blob/master/images/2/demo_launch_file.png?raw=true)
 
 Before explaining some of these parameters, you need to know this one thing: when we talk about rtabmap_ros related parameters, we need to differentiate two kind of parameters: ROS Parameters and RTAB-Map Parameters.
 
@@ -87,7 +88,7 @@ In order to work properly, the  _rtabmap_ros_  package needs to subscribe to som
 
 Note that in each system, the name of these topics may vary. This makes (almost always) mandatory to do  **remappings**  from this topics to the ones that are actually providing this data in our system. You can see how this is done within the previously shown launch file.  
   
-![](https://i-0658391eb9671438e.robotigniteacademy.com/jupyter/notebooks/img/rtabmap_remap.png)
+![](https://github.com/rwbot/RTAB-Map-Notes/blob/master/images/2/rtabmap_remap.png?raw=true)
 
 
 ## Arguments
@@ -154,5 +155,5 @@ You can also specify the following arguments to the rtabmap_ros package:
 
 #
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2OTUzNTIwOF19
+eyJoaXN0b3J5IjpbMTk4ODI5NzU1MywtODY5NTM1MjA4XX0=
 -->
