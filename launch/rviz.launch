@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+    <!--To launch rviz with a rviz config file-->
+    <!--<node pkg="rviz" name="rviz" type="rviz" args="-d $(find pkg)/rviz_config/rviz_config_file.rviz"/>-->
+    <!-- `-d` flag, explicitly `- -display-config`, loads the named .rviz config file-->
+    <!-- <node pkg="rviz" name="rviz" type="rviz" args="" /> -->
+    
+    <node pkg="rviz" name="rviz" type="rviz" args="-d $(find rtabrw)/config/navigation_visualization.rviz" />
+</launch>
