@@ -6,5 +6,5 @@
     <!-- `-d` flag, explicitly `- -display-config`, loads the named .rviz config file-->
     <!-- <node pkg="rviz" name="rviz" type="rviz" args="" /> -->
     
-    <node pkg="rviz" name="rviz" type="rviz" args="-d $(find rtabrw)/config/navigation_visualization.rviz" />
+    <node pkg="rviz" name="rviz" type="rviz" args="-d $(find rtabrw)/config/rtab.rviz" />
 </launch>
